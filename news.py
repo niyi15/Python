@@ -50,4 +50,6 @@ load_df = pd.DataFrame(new)
 load_df.to_sql("news", connection, if_exists='append',index = False, chunksize = 200)
 
 
+print(load_df)
+
 
